@@ -1,43 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>オセロ（CPU対戦＋リスタート＋スコア＋アニメーション）</title>
-  <style>
-    body { text-align: center; font-family: sans-serif; }
-    table { border-collapse: collapse; margin: 20px auto; }
-    td {
-      width: 50px; height: 50px;
-      border: 1px solid black;
-      background: green;
-      position: relative;
-      transition: background 0.5s ease-in-out;
-    }
-    .disk {
-      width: 40px; height: 40px;
-      border-radius: 50%;
-      margin: 5px auto;
-      transform: scale(0);
-      animation: grow 0.5s forwards ease-in-out;
-    }
-    .black { background: black; }
-    .white { background: white; }
-
-    @keyframes grow {
-      from { transform: scale(0); }
-      to { transform: scale(1); }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<h1>オセロ（CPU対戦＋リスタート＋スコア＋アニメーション）</h1>
-<button id="restart">リスタート</button>
-<h2 id="score">黒: 0, 白: 0</h2>
-<h3 id="currentTurn">黒の番です</h3>
+  <h1>オセロ（CPU対戦＋リスタート＋スコア＋アニメーション）</h1>
+  <button id="restart">リスタート</button>
+  <h2 id="score">黒: 0, 白: 0</h2>
+  <h3 id="currentTurn">黒の番です</h3>
 
-<table id="board"></table>
+  <table id="board"></table>
 
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
