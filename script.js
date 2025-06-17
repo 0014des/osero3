@@ -138,5 +138,6 @@ function restartGame(){
 
 restart.addEventListener('click', restartGame);
 
+initTable();
 restartGame();
 
